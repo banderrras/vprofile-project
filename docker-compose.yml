@@ -18,13 +18,13 @@ services:
     ports:
       - "11211:11211"
 
-  vpromq01:
-    image: rabbitmq
-    ports:
-      - "15672:15672"
-    environment:
-      - RABBITMQ_DEFAULT_USER=quest
-      - RABBITMQ_DEFAULT_PASS=quest
+  #vpromq01:
+  #  image: rabbitmq
+  #  ports:
+  #    - "15672:15672"
+  #  environment:
+  #    - RABBITMQ_DEFAULT_USER=quest
+  #    - RABBITMQ_DEFAULT_PASS=quest
 
   vproapp:
     build:
